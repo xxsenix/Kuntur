@@ -1,7 +1,9 @@
-endpoint: ${env:PRISMA_ENDPOINT}
+#endpoint: ${env:PRISMA_ENDPOINT}
 datamodel: datamodel.prisma
 # secret: ${env:PRISMA_SECRET}
 
 hooks:
   post-deploy:
     - graphql get-schema -p prisma
+
+endpoint: https://us1.prisma.sh/travis-callahan/kuntur1/dev
