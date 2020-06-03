@@ -4,7 +4,6 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import gql from "graphql-tag";
 import { CURRENT_USER_QUERY } from "./User";
-import { chainResolvers } from "graphql-tools";
 
 const REMOVE_FROM_CART_MUTATION = gql`
   mutation removeFromCart($id: ID!) {
